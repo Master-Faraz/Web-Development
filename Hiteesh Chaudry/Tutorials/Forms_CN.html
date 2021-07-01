@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- In action we need to specify the url where we want to send data-->
+<!-- method : which http method we are using to send data -->
+    <form action="" method="POST">
+
+        <!-- Clicking on username will highlight the username column -->
+        <label for="username">Username</label><br>
+        <input type="text" name="" id="username"><br>
+        <!-- Here we use lable for id = username -->
+
+        <label for="Email">Email</label><br>
+        <input type="email" name="" id="Email" placeholder="abc@gmail.com"><br>
+        <!-- Placeholder gives hint in form -->
+
+        <label for="password">Password</label><br>
+        <input type="password" name="" id="password" required><br>
+        <!-- Required is used for compulsory filling the form -->
+
+        <label for="Country">Country</label><br>
+        <input type="text" name="" id="Country" value = India disabled><br>
+        <!-- Value : will give default value -->
+        <!-- Disabled : User cannot change the value -->
+
+        <label for="Range"></label>
+        <input type="range" name="" id="Range" step="5" min="10" max="50">
+
+        <input type="submit" >
+
+        <!-- Some imp type are -->
+        <!-- number , time , range , email , url -->
+
+    </form>
+    <!-- Without name we cannot pass the form in backend so we should use name -->
+    
+</body>
+</html>
