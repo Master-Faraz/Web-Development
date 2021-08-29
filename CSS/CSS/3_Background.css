@@ -1,0 +1,36 @@
+body {
+  background-image: url("../Images/dragon_1920.jpg");
+  /* ne-repeat center center; */
+  /* for allignment in center and image will not repeat */
+  background-size: cover;
+}
+
+h1 {
+  color: aqua;
+  text-align: center;
+  /* border: 3px solid white; */
+  /* This will show border of h1*/
+
+  width: 500px;
+  margin: 0 auto;
+
+  /* this will allign the text to center */
+  margin-top: 150px;
+  /* this will allign the top of the text */
+
+  /* Font family */
+  font-family: "Oswald", sans-serif;
+
+  font-size: 5em;
+}
+div {
+  background-color: rgb(220, 236, 238);
+}
+h2 {
+  color: rgb(14, 14, 14);
+  text-align: center;
+}
+i{
+    color: blue;
+    
+}
