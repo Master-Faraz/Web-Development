@@ -1,0 +1,45 @@
+body {
+  height: 100%;
+  
+}
+
+video {
+  position: fixed;
+  /* For movement */
+  top: 50%;
+  left: 50%;
+  margin-top: -50%;
+  margin-left: -50%;
+  /* Z index gives the priority judt like layer */
+  z-index: 1;
+  
+}
+
+div {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.664);
+}
+
+p {
+  font-size: 1.45em;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: burlywood;
+}
+
+a{
+    font-size:1.5em;
+    color: violet;
+    display: inline-block;
+    text-decoration: none;
+}

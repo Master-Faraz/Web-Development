@@ -1,0 +1,34 @@
+body{
+    background-image: url(../Images/pexels-victor-freitas-841130.jpg);
+    background-size: cover;
+    opacity: 0.95;
+
+
+}
+
+div{
+    background-color: slategrey;
+    width: 60%;         /* Reduce border width */
+    text-align: center;
+    margin: 25px auto;
+    border-radius: 25px;        /* This will curve the border */
+}
+
+button{
+    color: chocolate;
+    font-size: 1.025em;
+    padding: 1px 10px 1px 10px;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 1.8em;
+    color:black;
+    
+}
+
+p{
+    font-size: 1em;
+    font-family: 'Hina Mincho', serif;
+    /* google fonts */
+}
