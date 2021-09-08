@@ -1,0 +1,65 @@
+a{
+    font-size: 30px;
+}
+
+/*               Links Design               */
+
+a:link{
+    color : red;
+    /* background-color: hotpink;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; */
+    
+}
+
+a:visited{
+    color: aqua;
+}
+
+a:hover{
+    color: darkorchid;
+}
+
+a:active{
+    color: crimson;    
+    /* On Clicking the link */
+}
+
+
+
+
+/*                  ID and class                   */
+
+
+/*      For accessing class  we use .       */
+
+div{
+    background: rgb(37, 250, 37); 
+    /* this is for all div */
+    height: 100px;
+}
+
+.saffron{
+    background:rgb(245, 167, 0) ;
+    height: 100px;
+    color: black;
+}
+
+.white{
+    background: white;
+    height: 100px;
+    color: black;
+}
+
+/*      For accessing ID             */
+
+#num1{
+    background-color: rgb(245, 167, 0);
+}
+
+#num2{
+    background-color: white;
+}
+
