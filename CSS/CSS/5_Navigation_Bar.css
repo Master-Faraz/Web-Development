@@ -1,3 +1,39 @@
-h1{
-    background-color: red;
+ul{
+    /* to remove the ul icon */
+    list-style-type: none;
+
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color:black;
+    
+    
+}
+
+li{
+    /* for side by side allignment */
+    float: left;
+    /* background-color: black; */
+}
+
+li a{
+    color: orange;
+    display: block;
+    text-align: center;
+    padding: 15px 18px;
+}
+
+li a:hover{
+    color: aqua;
+}
+
+
+/*                             Creating property for the class for right navigation                               */
+
+.right{
+    float: right;
+}
+
+.highlited{
+    background-color:azure;
 }
