@@ -1,0 +1,24 @@
+.grad{
+    height : 400px;
+    background : linear-gradient(red , blue) ;
+}
+
+div{
+    height : 300px;
+    background: gray;
+}
+
+.left_to_right_grad{
+    height: 400px;
+    background: linear-gradient(to right, red , blue);
+}
+
+.multi_grad{
+    height: 500px;
+    background : linear-gradient(#f99932 ,white , #418918 );
+}
+
+.radial{
+    height : 500px;
+    background: radial-gradient(white , red);
+}
