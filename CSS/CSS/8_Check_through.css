@@ -1,8 +1,7 @@
-/* div{
-    /* background-color : cyan;  */
+div{
+    background-color : cyan; 
+}
 
-/* } */ */
-
-input[type = "checkbox"] :checked + label{
-    text-decoration: line-through ;
+input[type ="checkbox"]:checked + label {
+  text-decoration: line-through;
 }

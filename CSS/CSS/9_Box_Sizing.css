@@ -1,0 +1,12 @@
+.one{
+    border: 2px solid ;
+    width: 500px;
+    size : 400px;
+}
+.two{
+    border: 2px solid ;
+    width: 500px;
+    size : 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
