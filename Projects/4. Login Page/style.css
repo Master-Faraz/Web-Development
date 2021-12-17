@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+div{
+    height: 300px;
+    width: 350px;
+  margin: 200px auto;
+  text-align: center;
+  border: solid 8px #40474d;
+  border-radius: 20px;
+}
+
+.email{
+    padding: 10000px auto;
+}
