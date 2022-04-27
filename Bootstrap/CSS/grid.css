@@ -1,0 +1,19 @@
+.h {
+  height: 300px;
+}
+
+.red {
+  background-color: rgb(250, 112, 0);
+}
+.blue {
+  background-color: blue;
+}
+.black {
+  background-color: black;
+}
+.green {
+  background-color: green;
+}
+.white{
+    background-color: #fff;
+}
