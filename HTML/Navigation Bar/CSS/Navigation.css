@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(37, 137, 225);
+}
+
+div{
+    background-color: #333;
+}
+
+ul{
+    list-style-type: none; /* For Hidding dots of unordered list  We can also change the style of dots */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* for fixing bgc of div is not working As CSS is breaking or overflowing at this point  */
+    /* background-color: #333; */
+}
+li{
+    float: left;
+    /* For shifting ul elements allignment we use this */
+}
+
+li a{
+    display: block;
+    color: orange;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: darkred;
+}
+
+
+.righty{
+    float: right;
+}
+
+.active{
+    background-color: grey;
+}
