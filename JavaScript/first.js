@@ -27,6 +27,10 @@ var discount = 75;
 var Selling_Price = (mrp - (mrp * discount) / 100);
 
 
+
+
+
+
 console.log("\nYour Selling Price is " + Selling_Price);
 
 //      Converting current price to discount percentage 
