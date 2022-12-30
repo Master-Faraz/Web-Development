@@ -44,11 +44,11 @@
 // console.log(discount_percentage);
 
 
-function fun(a, b) {
-    if (a > b)
-        return a;
-    return b;
-}
+// function fun(a, b) {
+//     if (a > b)
+//         return a;
+//     return b;
+// }
 
-var y = fun(6, 50)
-console.log(y)
+// var y = fun(6, 50)
+// console.log(y)
