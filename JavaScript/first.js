@@ -44,6 +44,8 @@ discount_percentage = Math.round(discount_percentage);   //.            For Roun
 console.log(discount_percentage);
 
 
+
+
 function fun(a, b) {
     if (a > b)
         return a;
