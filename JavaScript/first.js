@@ -45,8 +45,8 @@
 
 //. ***************************************     Array       **************************************
 
-var arr = ["a", "b", "c"]
-console.log(arr);
+// var arr = ["a", "b", "c"]
+// console.log(arr);
 
 // var arr_1 = Array("a", "b", "c")
 // console.log(arr_1);
@@ -55,24 +55,24 @@ console.log(arr);
 // console.log(arr_2);
 
 
-console.log(arr.length);
+// console.log(arr.length);
 
-arr.push(5)
-console.log(arr);
+// arr.push(5)
+// console.log(arr);
 
-arr.pop(5)
-console.log(arr);
+// arr.pop(5)
+// console.log(arr);
 
-arr.unshift(5) //.  Push Front
-console.log(arr);
+// arr.unshift(5) //.  Push Front
+// console.log(arr);
 
-arr.shift(5) //.        POP front
-console.log(arr);
+// arr.shift(5) //.        POP front
+// console.log(arr);
 
-console.log(arr.indexOf("c"));
+// console.log(arr.indexOf("c"));
 
-var x = Array.from("Faraz");  //.*************** Creating array from String
-console.log(x);
+// var x = Array.from("Faraz");  //.*************** Creating array from String
+// console.log(x);
 
 //.***************************************  Function ***************************************
 
@@ -133,3 +133,119 @@ console.log(x);
 
 // console.log(arr_new.filter((num) => num > 55));
 // console.log(arr_new);
+
+
+
+//. ************************************ Slice & Splice ************************************
+
+// arr = ["a", "b", "c", "d"]
+
+
+// console.log(arr.slice(1, 3));
+
+// arr.splice(1,2,"Hi" , "Bye")
+// console.log(arr);
+
+
+// ***************************  Objects *********************************************************
+
+// obj = {
+//     name: "Redmi Note 9 pro max",
+//     ram_size: 6,
+//     front_cam: 32,
+//     back_cam: 64,
+//     total_cam: 4,
+//     Android_Version: "Android 12"
+// };
+
+// console.log(obj);
+// console.table(obj);
+// console.log(obj["ram_size"]);
+// console.log(obj.name);
+
+
+// obj = {
+//     name: "Redmi Note 9 pro max",
+//     ram_size: 6,
+//     front_cam: 32,
+//     back_cam: 64,
+//     total_cam: 4,
+//     Android_Version: "Android 12",
+//     costumers: [],
+//     varenty: true,
+
+//     Total_Customers: function (c_name) {
+//         this.costumers.push(c_name);
+//     },
+
+//     info: function () {
+//         return `
+//     Phone name : ${this.name} 
+//     Total Ram : ${this.ram_size} GB
+//     Front Camera : ${this.front_cam} MP
+//     Back Camera : ${this.back_cam} MP
+//     user : ${this.costumers}
+//     In Varenty : ${this.varenty}
+//     `
+//     }
+// };
+
+// obj.Total_Customers("Faraz")
+// console.log(obj.name);
+// console.log(obj.info());
+
+
+// ******************************************   Loops ********************************************************
+
+// obj = {
+//     name: "Redmi Note 9 pro max",
+//     ram_size: 6,
+//     front_cam: 32,
+//     back_cam: 64,
+//     total_cam: 4,
+//     Android_Version: "Android 12"
+// };
+// var arr = ["Bihar", "UP", "MP", "Rajesthan", 1999, "Assam", "Hydarabad", "Delhi"]
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] !== "string") continue;
+//     if (arr[i] === "Hydarabad") break;
+//     console.log(arr[i]);
+// }
+
+//.         While and Do while loops also exists just like C++
+
+
+
+// arr.forEach(i => (console.log(i))); //.         For each loop is method of array
+
+//.************************* For OF loop --> used in Arrays ***********************************
+
+// for (const n of arr) {
+//     console.log(n);
+// }
+//.************************* For IN loop --> used for objects ***********************************
+
+// for (const n in obj) {
+//     console.log(` keys ${n}       values : ${obj[n]}`);
+// }
+
+//.*******************************  THIS Keyword    *********************************
+
+// console.log("Global Object ", this);
+
+// var user = {
+//     name: "Faraz",
+//     roll: 191044,
+//     get_ROLL: function () {
+//         console.log("Inside function of obj : ", this)
+//         function say() {
+//             console.log("Hello ", this);
+//         }
+//         say();
+//     }
+// }
+
+// user.get_ROLL();
+
+//. ************************************
