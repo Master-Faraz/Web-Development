@@ -317,4 +317,6 @@ Arshad = {
 // var x = faraz.get_info.bind(Arshad);
 // x()
 
-faraz.get_info.call(Arshad);  //. it directly calls it 
+// faraz.get_info.call(Arshad);  //. it directly calls it 
+
+
