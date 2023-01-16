@@ -69,7 +69,7 @@ button.addEventListener("click", () => {
 
 const button_2 = document.querySelector(".sort-descending-btn");
 
-button_2.addEventListener("click" , ()=>{
-    cources.sort((a,b)=>b.price-a.price);
-    Generate_List()
-})
+// button_2.addEventListener("click" , ()=>{
+//     cources.sort((a,b)=>b.price-a.price);
+//     Generate_List()
+// })
