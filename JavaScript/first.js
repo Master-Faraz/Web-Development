@@ -288,23 +288,23 @@
 
 //.*************************    borrow method using bind  && Call prop  *****************************************
 
-faraz = {
-    name: "faraz",
-    roll: 191044,
-    branch: "CSE",
+// faraz = {
+//     name: "faraz",
+//     roll: 191044,
+//     branch: "CSE",
 
-    get_info: function () {
-        console.log(
-            `name is ${this.name}\nbranch is ${this.branch}\nroll is ${this.roll}
-        `)
-    }
-}
+//     get_info: function () {
+//         console.log(
+//             `name is ${this.name}\nbranch is ${this.branch}\nroll is ${this.roll}
+//         `)
+//     }
+// }
 
-Arshad = {
-    name: "Arshad",
-    roll: 195015,
-    branch: "Civil",
-}
+// Arshad = {
+//     name: "Arshad",
+//     roll: 195015,
+//     branch: "Civil",
+// }
 
 
 // faraz.get_info()
@@ -320,3 +320,17 @@ Arshad = {
 // faraz.get_info.call(Arshad);  //. it directly calls it 
 
 
+//.**********************************************   Scope ( LET KEYWORD ) USE
+
+console.log(x);
+console.log(y); //.     ERROR -->   LET keyword 
+var x =5
+let y = 6
+
+if(true){
+   var i=100
+   let j=200
+}
+
+console.log(i);
+console.log(j); //.         Error --> not exist in Scope
