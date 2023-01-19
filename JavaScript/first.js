@@ -322,15 +322,37 @@
 
 //.**********************************************   Scope ( LET KEYWORD ) USE
 
-console.log(x);
-console.log(y); //.     ERROR -->   LET keyword 
-var x =5
-let y = 6
+// console.log(x);
+// console.log(y); //.     ERROR -->   LET keyword 
+// var x =5
+// let y = 6
 
-if(true){
-   var i=100
-   let j=200
-}
+// if(true){
+//    var i=100
+//    let j=200
+// }
 
-console.log(i);
-console.log(j); //.         Error --> not exist in Scope
+// console.log(i);
+// console.log(j); //.         Error --> not exist in Scope
+
+
+//.   ***************************** Classes and Objects *****************
+
+// import Student from "./Class_1"; //.   First method to import
+const Student = require("./Class_1")
+
+const Faraz = new Student("Faraz", 191044, "CSE")
+
+console.log(Faraz.getInfo()); //.       Dummping out information
+console.log(Faraz.getInfo().branch); //.For Accessing Specific element
+
+
+Faraz.Enroll_Course("Bio")
+Faraz.Enroll_Course("Cyber Security")
+Faraz.Enroll_Course("IOT")
+Faraz.Enroll_Course("Soft Skill")
+
+console.log(Faraz.Get_Course())
+let x = Faraz.Get_Course()
+
+x.forEach(i => console.log(i)) //.      Iterating each element
