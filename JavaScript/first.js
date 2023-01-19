@@ -33,7 +33,7 @@
 
 // console.log("\nYour Selling Price is " + Selling_Price);
 
-// //      Converting current price to discount percentage 
+// //      Converting current price to discount percentage
 
 // discount_percentage = ((mrp - current_price) / mrp) * 100;
 
@@ -180,7 +180,7 @@
 
 //     info: function () {
 //         return `
-//     Phone name : ${this.name} 
+//     Phone name : ${this.name}
 //     Total Ram : ${this.ram_size} GB
 //     Front Camera : ${this.front_cam} MP
 //     Back Camera : ${this.back_cam} MP
@@ -317,13 +317,13 @@
 // var x = faraz.get_info.bind(Arshad);
 // x()
 
-// faraz.get_info.call(Arshad);  //. it directly calls it 
+// faraz.get_info.call(Arshad);  //. it directly calls it
 
 
 //.**********************************************   Scope ( LET KEYWORD ) USE
 
 // console.log(x);
-// console.log(y); //.     ERROR -->   LET keyword 
+// console.log(y); //.     ERROR -->   LET keyword
 // var x =5
 // let y = 6
 
@@ -339,20 +339,113 @@
 //.   ***************************** Classes and Objects *****************
 
 // import Student from "./Class_1"; //.   First method to import
-const Student = require("./Class_1")
+// const Student = require("./Class_1")
 
-const Faraz = new Student("Faraz", 191044, "CSE")
+// const Faraz = new Student("Faraz", 191044, "CSE")
 
-console.log(Faraz.getInfo()); //.       Dummping out information
-console.log(Faraz.getInfo().branch); //.For Accessing Specific element
+// console.log(Faraz.getInfo()); //.       Dummping out information
+// console.log(Faraz.getInfo().branch); //.For Accessing Specific element
 
 
-Faraz.Enroll_Course("Bio")
-Faraz.Enroll_Course("Cyber Security")
-Faraz.Enroll_Course("IOT")
-Faraz.Enroll_Course("Soft Skill")
+// Faraz.Enroll_Course("Bio")
+// Faraz.Enroll_Course("Cyber Security")
+// Faraz.Enroll_Course("IOT")
+// Faraz.Enroll_Course("Soft Skill")
 
-console.log(Faraz.Get_Course())
-let x = Faraz.Get_Course()
+// console.log(Faraz.Get_Course())
+// let x = Faraz.Get_Course()
 
-x.forEach(i => console.log(i)) //.      Iterating each element
+// x.forEach(i => console.log(i)) //.      Iterating each element
+
+
+//.******************************   Inheritance     ********************************
+// class Inherited_Class extends Student {
+
+//     #attandance = 45; //.    Private var
+
+//     constructor(name, roll, branch) {
+//         super(name, roll, branch);
+//     }
+
+//     get_attandance() {
+//         return this.#attandance;
+//     }
+// }
+
+
+// const faraz = new Inherited_Class("Faraz", 191044, "CSE")
+
+// console.log(faraz.getInfo());
+// console.log(faraz.getInfo().name);
+// console.log(faraz.name);
+// console.log(faraz.attandance);  //.     Cant access the private member
+// console.log(faraz.get_attandance());
+
+
+
+//. *************************************       EVENT LOOP      ***********************
+
+// const uno = () => console.log("one");//.        Function
+
+// const dos = () => {
+//     setTimeout(() => { console.log("Important") }, 3000) //.   Run after 3 sec
+
+//     console.log("two")
+// };
+
+// const tres = () => console.log("Three");
+
+
+// uno()
+// dos()
+// tres()
+
+
+//. *************************************       Promise async and await      ***********************
+
+const uno = () => { return "one"; }//.        Function
+
+// const dos = () => {
+//     setTimeout(() => { return "Two" }, 3000) //.   Run after 3 sec
+
+// };
+
+// const dos = async () => {
+//     setTimeout(() => { return "Two" }, 3000) //.   Run after 3 sec
+
+// }; //.******* By putting async we get promise{undefined} in CL as promise is not fullfilled yet 
+
+const dos = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => { resolve("Two") }, 3000) //.  We are not resolving we are returning
+    })
+
+};
+
+// const dos = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => { reject("Two") }, 3000) //.  We are not resolving we are returning
+//     })
+
+// };
+
+const tres = () => { return "Three" };
+
+
+Call_Me = async () => //.    We put async because we are using async method inside
+{
+    const val_1 = uno()
+    console.log(val_1);
+
+    // const val_2 = dos()
+    // console.log(val_2);   //.        This prints undefined as in wait-time
+
+    const val_2 = await dos()  //.  Wait until this finish
+    console.log(val_2);
+
+    const val_3 = tres()
+    console.log(val_3);
+}
+
+Call_Me()
+

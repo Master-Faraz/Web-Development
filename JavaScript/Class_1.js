@@ -20,6 +20,8 @@ class Student {
         return this.cources;
     }
 
+    static fun(){console.log("This is private not for inheritance");}
+
 }
 
 module.exports = Student; //.   For Throw or export
