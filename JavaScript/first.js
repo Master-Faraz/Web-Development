@@ -101,6 +101,7 @@
 // . *************************** Call Back Function **********************
 
 // var isEven = (n) => { return n % 2 === 0; }
+// // console.log(isEven(5));
 
 // var res = [2, 3, 6, 8].every(isEven)  //.   Without loop we can iterate all values
 // console.log(res);
@@ -403,7 +404,7 @@
 
 //. *************************************       Promise async and await      ***********************
 
-const uno = () => { return "one"; }//.        Function
+// const uno = () => { return "one"; }//.        Function
 
 // const dos = () => {
 //     setTimeout(() => { return "Two" }, 3000) //.   Run after 3 sec
@@ -415,12 +416,12 @@ const uno = () => { return "one"; }//.        Function
 
 // }; //.******* By putting async we get promise{undefined} in CL as promise is not fullfilled yet 
 
-const dos = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => { resolve("Two") }, 3000) //.  We are not resolving we are returning
-    })
+// const dos = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => { resolve("Two") }, 3000) //.  We are not resolving we are returning
+//     })
 
-};
+// };
 
 // const dos = () => {
 //     return new Promise((resolve, reject) => {
@@ -429,23 +430,23 @@ const dos = () => {
 
 // };
 
-const tres = () => { return "Three" };
+// const tres = () => { return "Three" };
 
 
-Call_Me = async () => //.    We put async because we are using async method inside
-{
-    const val_1 = uno()
-    console.log(val_1);
+// Call_Me = async () => //.    We put async because we are using async method inside
+// {
+//     const val_1 = uno()
+//     console.log(val_1);
 
-    // const val_2 = dos()
-    // console.log(val_2);   //.        This prints undefined as in wait-time
+//     // const val_2 = dos()
+//     // console.log(val_2);   //.        This prints undefined as in wait-time
 
-    const val_2 = await dos()  //.  Wait until this finish
-    console.log(val_2);
+//     const val_2 = await dos()  //.  Wait until this finish
+//     console.log(val_2);
 
-    const val_3 = tres()
-    console.log(val_3);
-}
+//     const val_3 = tres()
+//     console.log(val_3);
+// }
 
-Call_Me()
+// Call_Me()
 
