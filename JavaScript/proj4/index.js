@@ -121,13 +121,14 @@ function fail() {
   }, 1000);
 }
 
+//. For resetting the function
 function reset() {
   isFlipped = false;
   firstCard = null;
   secondCard = null;
 }
 
-//TODO: shuffle
+//Shuffle The cards
 
 (function shuffle() {
   cards.forEach((card) => {
