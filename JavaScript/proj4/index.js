@@ -80,6 +80,8 @@ var secondCard;
 
 cards.forEach((card) => card.addEventListener("click", flip));
 
+
+//. Flip function for flipping the cards using .flip class in CSS
 function flip() {
   //   console.log("Card flipped");
   // console.log(this);
@@ -95,7 +97,7 @@ function flip() {
     checkIt();
   }
 }
-
+//. For checking if two cards are equal 
 function checkIt() {
   //   console.log("Checking...");
   if (firstCard.dataset.image === secondCard.dataset.image) {
@@ -105,6 +107,7 @@ function checkIt() {
   }
 }
 
+//. Success function
 function success() {
   //   console.log("Success");
   firstCard.removeEventListener("click", flip);
@@ -112,6 +115,7 @@ function success() {
   reset();
 }
 
+//. Fail Function for not clicking on same cards  
 function fail() {
   //   console.log("Failed");
   setTimeout(() => {
