@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    height : 4vh;
+}
+
+ul{
+    text-decoration: none;
+}
+
+li a{
+    display: inline-block;
+    margin-top: .05px;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.red{
+    display: inline-block;
+    background-color: red;
+    height :90vh;
+    width: 50%;
+}
+.green{
+    display: inline-block;
+    background-color: green;
+    width: 50%;
+    height: 90vh;
+}
+
+footer{
+    background-color: black;
+    height:10vh
+}
+p{
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+
+}

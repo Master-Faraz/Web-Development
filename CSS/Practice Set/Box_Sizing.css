@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border: 10px solid yellowgreen;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    /* margin: 15px; */
+}
+
+.content-box{
+    background-color: rgb(114, 114, 241);
+    height: 90vh;
+    box-sizing: border-box;
+    
+}
+
+
+footer{
+    height: 15vh;
+    background-color: aqua;
+    /* box-sizing: border-box; */
+    text-align: center;
+
+}
+
+li{
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* li hover{
+    color: red;
+} */

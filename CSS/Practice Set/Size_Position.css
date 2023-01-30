@@ -1,0 +1,48 @@
+/* Responsive nav bar using relative length
+    Sticky nav bar using position prop
+    Use Z index
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a{
+    
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0.5vw;
+    box-sizing: border-box;
+}
+
+li{
+    display: inline;
+}
+
+.content{
+    background-color: beige;
+    height: 200vh;
+
+
+    z-index: 2;
+    position: relative;
+}
+header{
+    padding: 1vh;
+    background-color: black;
+    /* height: 5vh; */
+    position: sticky;
+    top:0;
+    }
+
+footer{
+    background-color: black;
+    height: 5vh;
+}
+p{
+    color: aliceblue;
+}
