@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: black;
+    
+}
+ul{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+
+li{
+    width: 50vw;
+    color: white;
+    list-style: none;
+}

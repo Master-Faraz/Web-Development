@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    background-color: cyan;
+    height: 70vh;
+
+    /* flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+
+    flex-wrap: wrap; /* When resizing the window rearrange the position also*/
+
+    justify-content: center; /* Horizontal center   */
+
+    align-items: center; /* Vertical Center */
+
+    align-content: center; /* for treating all div as single entity inside container */
+}
+
+
+.first {
+    height :10vh;
+    width: 30vw;
+    border: 5px solid black;
+    text-align: center;
+    background-color: green;
+}
+
+.second {
+    height :10vh;
+    width: 30vw;
+    border: 5px solid red;
+    text-align: center;
+    background-color: yellow;
+    /* margin: 0 auto; */
+}
+
+/* ************************************************** */
+/* header{
+    background-color: black;
+    height:  20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline;
+
+} */
+
+/* 
+
+.box1{
+    background-color: blue;
+    height: 100vh;
+    width: 40vw;
+    float: left;
+}
+.box2{
+    background-color: red;
+    width: 40vw;
+    height: 100vh;
+    float: right;
+
+}
+ */
+
+
+ /* ****************************************************Using Flexbox ********************************* */
+
+
+ header{
+    background-color: black;
+    height:  20px;
+    display: flex;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.practice{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ .box1{
+    background-color: blue;
+    height: 40vh;
+    width: 40vw;
+}
+.box2{
+    background-color: red;
+    width: 40vw;
+    height: 40vh;
+
+}
