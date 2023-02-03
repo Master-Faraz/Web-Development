@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: cyan;
+}
+
+.box{
+    background-color: red;
+    color: white;
+    height: 300px;
+    width: 300px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    /* animation-name: Width_Animate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+
+    /* Shorthand Prop Function same as above prop*/
+
+    animation: Width_Animate 3s ease-in-out .5s infinite alternate-reverse;
+
+    
+
+
+}
+
+/* For making animations */
+
+@keyframes Width_Animate {
+    form{
+        width:300px;
+        height:300px;
+    }
+    to{
+        width: 100vw;
+        height: 100vh;
+    }
+}
