@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//.****************** Importing Custom components************************
+import Card from "./Components/Card"
+import Avatar from "./Components/Avatar"
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //.****************************************************************************************************
@@ -59,37 +63,46 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //.************************************** Components Nesting   ************************************************
 
-function Card({ FullName, ...props }) {
+// function Card({ FullName, ...props }) {
 
-  const Card_Style= {
-    padding: "10px",
-    border : "2px solid black",
-    boxShadow :"2px 2px 2px grey" 
-  }
+//   const Card_Style= {
+//     padding: "10px",
+//     border : "2px solid black",
+//     boxShadow :"2px 2px 2px grey",
+//     margin : "20px"
+//   }
 
 
-  return (
-    <div style={Card_Style}>
-      <Avatar image={props.image} name={FullName} />
-      <h1>Computer Science Engineering  </h1>
-      <h1>Name : {FullName} </h1>
-      <h1>Roll : {props.roll}</h1>
-    </div>
-  )
-}
+//   return (
+//     <div style={Card_Style}>
+//       <Avatar image={props.image} name={FullName} />
+//       <h1>Computer Science Engineering  </h1>
+//       <h1>Name : {FullName} </h1>
+//       <h1>Roll : {props.roll}</h1>
+//     </div>
+//   )
+// }
 
-function Avatar(props) {
-  return (
-    <img src={props.image} alt={props.name} />
-  );
+// function Avatar(props) {
+//   return (
+//     <img src={props.image} alt={props.name} />
+//   );
+// }
+
+const grid_box = {
+  display :"grid",
+  gridTemplateColumns : "auto auto auto"
 }
 
 
 let name = "Faraz Ali Ahmad";
-let image_Source = "https://via.placeholder.com/200";
+let image_Source = "https://via.placeholder.com/200"
 
 root.render(
-  <div>
+  <div style={grid_box}>
+    <Card FullName={name} roll="191044" image = {image_Source} />;
+    <Card FullName={name} roll="191044" image = {image_Source} />;
+    <Card FullName={name} roll="191044" image = {image_Source} />;
     <Card FullName={name} roll="191044" image = {image_Source} />;
     <Card FullName={name} roll="191044" image = {image_Source} />;
     <Card FullName={name} roll="191044" image = {image_Source} />;
