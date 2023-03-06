@@ -14,8 +14,10 @@ function Counter() {
     return (
         <>
             <p>This is the Value of count {count}</p>
-            {/*  React only rerenders the paragraph  not the whole JSX Fragment */}
+            {/* Above code -> React only rerenders the paragraph not the whole JSX Fragment */}
+
             <button onClick={UpdateCount}>Click me</button>
+            {/* onClick is event listner in react */}
         </>
     )
 }

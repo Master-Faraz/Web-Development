@@ -1,14 +1,15 @@
 import Counter from "./components/Counter";
 import Fruits from "./components/Fruits";
-
+import Pract from "./components/Pract";
 
 function App() {
   return (
-<>
-<Counter/>
-<Fruits />
+    <>
+      <Pract />
+      {/* <Counter /> */}
+      {/* <Fruits /> */}
 
-</>  );
+    </>);
 }
 
 export default App;
