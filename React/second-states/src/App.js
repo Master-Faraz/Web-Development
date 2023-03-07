@@ -1,11 +1,15 @@
 import Counter from "./components/Counter";
 import Fruits from "./components/Fruits";
-import Pract from "./components/Pract";
+import CounterUpdated from "./components/CounterUpdated";
+import Input_Text from "./components/Input_Text";
+import Notes from "./components/Notes";
 
 function App() {
   return (
     <>
-      <Pract />
+      <Notes />
+      {/* <Input_Text/> */}
+      {/* <CounterUpdated /> */}
       {/* <Counter /> */}
       {/* <Fruits /> */}
 
