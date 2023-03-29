@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 // Here we are creating a navigation bar through which we are changing the navigation button using props 
 
 function Navbar(props) {
+
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            {/* Props .mode from app.js */}
+            <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme={props.mode}>
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">{props.title}</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,11 +24,18 @@ function Navbar(props) {
                             </li>
 
                         </ul>
-                        <form className="d-flex  " role="search">
-                            <input className="form-control me-2  " type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-primary" type="submit">Search</button>
-                        </form>
+
+                        <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
+
+                            {/* Here we use Ternary Operator for toggle Modes  */}
+                            {/* And we use {} -> For JS and `` -> for inserting JS in ${}  */}
+
+                            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
+                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+                        </div>
+
                     </div>
+
                 </div>
             </nav>
         </>
