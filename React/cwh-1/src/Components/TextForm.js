@@ -3,41 +3,49 @@ import React, { useState } from 'react'
 function TextForm(props) {
     const [text, SetText] = useState("");
     const [Email, SetEmail] = useState([]);
-    
+
     const handleUP = () => {
         console.log("Button clicked")
         SetText(text.toUpperCase())
-        
+        props.Show_Alert("Converted to Uppercase !", "success")
+
     }
     const handleUPONchange = (event) => {
         console.log("handled event")
         SetText(event.target.value)      //. ***************************     Old text is passes to new state   *******************************
     }
-    
-    
+
+
     const handleDown = () => {
         SetText(text.toLowerCase())
-        
+        props.Show_Alert("Converted to Lowercase !", "success")
+
+
     }
-    
+
     const handleClear = () => {
         let new_text = ""
         SetText(new_text);
+        props.Show_Alert("Cleared Text !" , "success")
+
     }
-    
+
     const handleEmail = () => {
         var email_arr = text.match(/[\w\d.-]+@[\w\d.-]+/g)       //.        Regular Expression for email extraction
         SetEmail(email_arr);
-        
+
     }
-    
+
     const handleCapitalize = () => {
         const nameCapitalized = text.charAt(0).toUpperCase() + text.slice(1);
         SetText(nameCapitalized)
+        props.Show_Alert("Capitalized !" , "success")
     }
     const handleTitleCase = () => {
         let new_text = text.replace(/\b[a-z]/g, (x) => x.toUpperCase())
         SetText(new_text)
+        props.Show_Alert("Converted to Title Case !" , "success")
+
     }
 
 
@@ -91,7 +99,7 @@ function TextForm(props) {
     }
 
     return (
-        <div style={{backgroundColor : props.mode === 'dark' ? 'rgb(53,54,58)' : 'white' , color : props.mode === 'dark' ? 'white' : 'black'}}>
+        <div style={{ backgroundColor: props.mode === 'dark' ? 'rgb(53,54,58)' : 'white', color: props.mode === 'dark' ? 'white' : 'black' }}>
             {/************************************************      whole textbox     ******************************************************/}
             <div className="mb-3">
                 <h1>{props.heading}</h1>
@@ -123,7 +131,7 @@ function TextForm(props) {
 
             <div className="container my-4">
                 <h2> Preview </h2>
-                <p>{text.length>0?text:"Enter Something above to preview Here"}</p>
+                <p>{text.length > 0 ? text : "Enter Something above to preview Here"}</p>
             </div>
 
             {/* <div className="container my-4">
