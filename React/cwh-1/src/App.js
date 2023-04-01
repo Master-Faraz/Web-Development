@@ -41,10 +41,14 @@ function App() {
 
 
 
+
+
+
   return (
     <>
       <Navbar title="TextUtils" prop1="My Home" prop2="About US" mode={mode} toggleMode={toggleMode} />
 
+      <Alert alert={alert} />
       <Alert alert={alert} />
 
       {/* container class in bootstrap for alligning in center  and my-3 -> margin 3 in y*/}
