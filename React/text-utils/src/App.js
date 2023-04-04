@@ -4,7 +4,12 @@ import TextForm from './Components/TextForm';
 import React, { useState } from 'react'
 import Alert from './Components/Alert';
 import About from './Components/About';
-
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
 
@@ -39,25 +44,32 @@ function App() {
     }, 1200);
   }
 
-
+  // *****************************************  React Router **********************************************************
 
 
 
 
   return (
     <>
-      <Navbar title="TextUtils" prop1="My Home" prop2="About US" mode={mode} toggleMode={toggleMode} />
+      <BrowserRouter>
+        <Navbar title="TextUtils" prop1="My Home" prop2="About US" mode={mode} toggleMode={toggleMode} />
+        
+        <Routes>
+          <Route path='/' element = {} />
+        </Routes>
 
-      <Alert alert={alert} />
-      <Alert alert={alert} />
-
-      {/* container class in bootstrap for alligning in center  and my-3 -> margin 3 in y*/}
-      <div className="container my-3">
-        <TextForm heading="Enter the text to analize" Show_Alert={Show_Alert} mode={mode} />
-      </div>
-      <About />
+      </BrowserRouter>
     </>
   );
 }
 
 export default App;
+
+<Alert alert={alert} />
+
+{/* container class in bootstrap for alligning in center  and my-3 -> margin 3 in y*/}
+<div className="container my-3">
+
+      <TextForm heading="Enter the text to analize" Show_Alert={Show_Alert} mode={mode} />
+
+</div>
