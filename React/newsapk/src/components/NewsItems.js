@@ -6,7 +6,7 @@ export class NewsItems extends Component {
     //     console.log("This is the news items component")
     // }
     render() {
-        let { title, description, image_url, news_url } = this.props;        // for getting props in components
+        let { title, description, image_url, news_url ,author ,date} = this.props;        // for getting props in components
 
         return (
             <div className='my-3 card-deck'>
@@ -19,9 +19,8 @@ export class NewsItems extends Component {
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
                         <p className="card-text">{description}</p>
-
+                        <p className="card-text"><small className='text-muted'>By {!author?"Unknown":author} on {new Date(date).toGMTString()}</small></p>
                         <div >
-
                             <a href={news_url} target="_blank" className="btn btn-primary btn-sm">Read More</a>
                         </div>
                     </div>
