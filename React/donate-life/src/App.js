@@ -1,15 +1,14 @@
 import './App.css';
-// import Carousel from './components/Carousel';
+import Find_Donor from './components/Find_Donor';
 import Navbar from './components/Navbar';
-import Rest from './components/Rest';
 
 function App() {
   return (
-    <>
-        <Navbar status = "fixed"/>
-        {/* <Carousel/> */}
-        <Rest/>
-    </>
+    <div>
+      <Navbar status="fixed" />
+      <Find_Donor />
+    
+    </div>
   );
 }
 

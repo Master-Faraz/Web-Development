@@ -1,13 +1,13 @@
 import React from 'react'
 import logo_img from './Logo.png'
 
-function Navbar(props) {
+function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src={logo_img} alt="Logo" width="30" height="24" className="d-inline-block align-text-top myt-1" />
+                        <img src={logo_img} alt="Logo" width="30px" height="30px" className="d-inline-block align-text-top myt-1" />
                         Donate Life
                     </a>
 
@@ -40,8 +40,8 @@ function Navbar(props) {
                         </ul>
                     </div>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button className="btn btn-primary me-md-2 " type="button" >Donor Login</button>
-                        <button className="btn btn-primary" type="button">Blood Bank Login</button>
+                        <button className="btn btn-primary me-md-2 btn-sm " type="button" >Donor Login</button>
+                        <button className="btn btn-primary btn-sm" type="button">Blood Bank Login</button>
                     </div>
                 </div>
             </nav>
