@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Dropdown_blood() {
+function Dropdown_blood(props) {
     return (
         <>
             <div className="dropdown">
                 <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
+                    {props.name}
                 </a>
 
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
