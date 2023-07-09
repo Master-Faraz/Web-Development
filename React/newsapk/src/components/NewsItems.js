@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 export class NewsItems extends Component {
+    
     // constructor(){
     //     super();
     //     console.log("This is the news items component")

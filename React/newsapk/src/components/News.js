@@ -53,6 +53,8 @@ export class News extends Component {
     // Lifecycle method run after render Method
     async componentDidMount() {
         this.updateNews();
+        // console.log(this.props.apiKEY );
+        // console.log(typeof `1ab18db77fb4428281e985d7ce96e0a4` );
     }
 
     fetchMoreData = async () => {
