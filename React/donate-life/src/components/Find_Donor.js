@@ -38,7 +38,7 @@ function Find_Donor() {
                                 <Dropdown_blood name="Blood Group" />
                             </div>
                             <div className="col-3 text-center mt-1" >
-                                <button type="button" class="btn btn-primary text-black-50 " style={{
+                                <button type="button" className="btn btn-primary text-black-50 " style={{
                                     background: "linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)"
                                 }}>Search</button>
                             </div>
