@@ -1,53 +1,41 @@
 import React from 'react'
-import Dropdown_blood from './Dropdown_blood'
+import Internal_Dropdown from './Internal_Dropdown'
+import Card from './Card'
 
+import Faraz from './Images/Faraz.png'
+import Sumit from './Images/Sumit.png'
+import Sahil from './Images/Sahil.png'
+import harsh from './Images/harsh.png'
+import Atif from './Images/Atif.png'
 
 function Find_Donor() {
     return (
-        <div className="container-fluid" style={{ height: "100vh", width: "70vw", marginTop: "3vh" }}>
-            {/* <h1>djkshf</h1> */}
+        <div className="container-fluid" style={{ height: "100vh", width: "70vw", marginTop: "65px" }}>
 
-            <div className='row align-items-start text-center' >
-                <div className="container" >
+            {/* Find Donor_Dropdown 
+                Here i am passing props to component internal dropdown
+            */}
+            <Internal_Dropdown name="Find Donor" dd1="Select State" dd2="Select City" dd3="Blood Group" />
 
-                    <div className="col-12 " style={{
+            <div className="row " style={{ marginTop: "25px"  }}>
+                <div className="col-4 "><Card  name="Faraz" img={Faraz} bg = "AB+"/></div>
+                <div className="col-4 "><Card  name="Sumit" img={Sumit} bg = "A+"/></div>
+                <div className="col-4 "><Card  name="Sahil" img={Sahil} bg = "B+"/></div>
+                <div className="col-4 "><Card  name="Atif" img={Sumit} bg = "A-"/></div>
+                <div className="col-4 "><Card  name="Harsh" img={harsh} bg = "B-"/></div>
+                <div className="col-4 "><Card  name="Faraz" img={Faraz} bg = "AB+"/></div>
+                <div className="col-4 "><Card  name="Sumit" img={Sumit} bg = "A+"/></div>
+                <div className="col-4 "><Card  name="Sahil" img={Sahil} bg = "B+"/></div>
+                <div className="col-4 "><Card  name="Faraz" img={Faraz} bg = "AB+"/></div>
+                <div className="col-4 "><Card  name="Sumit" img={Sumit} bg = "A+"/></div>
+                <div className="col-4 "><Card  name="Sahil" img={Sahil} bg = "B+"/></div>
+                <div className="col-4 "><Card  name="Atif" img={Sumit} bg = "A-"/></div>
+                <div className="col-4 "><Card  name="Harsh" img={harsh} bg = "B-"/></div>
+                <div className="col-4 "><Card  name="Faraz" img={Faraz} bg = "AB+"/></div>
+                <div className="col-4 "><Card  name="Sumit" img={Sumit} bg = "A+"/></div>
+                <div className="col-4 "><Card  name="Sahil" img={Sahil} bg = "B+"/></div>
 
-                        height: "4vh",
-                        borderRadius: "30px 30px 0px 0px",
-                        background: "linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)"
-                    }}>Find Donor</div>
-
-                    <div className="col-12" style={{
-                        height: "6vh",
-                        borderRadius: "0px 0px 30px 30px",
-                        background: "linear-gradient(180deg, #D3E1EA 0%, rgba(85, 95, 93, 0.00) 100%)"
-
-                    }}>
-                        <div className="row" >
-                            <div className="col-3 text-center mt-1" >
-                                <Dropdown_blood
-                                    name="Select State"
-                                />
-                            </div>
-
-                            <div className="col-3 text-center mt-1" >
-                                <Dropdown_blood name="Select City" />
-                            </div>
-
-                            <div className="col-3 text-center mt-1" >
-                                <Dropdown_blood name="Blood Group" />
-                            </div>
-                            <div className="col-3 text-center mt-1" >
-                                <button type="button" className="btn btn-primary text-black-50 " style={{
-                                    background: "linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)"
-                                }}>Search</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
-
         </div>
     )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import logo_img from './Logo.png'
+import logo_img from './Images/Logo.png'
 
 function Navbar() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <img src={logo_img} alt="Logo" width="30px" height="30px" className="d-inline-block align-text-top myt-1" />
