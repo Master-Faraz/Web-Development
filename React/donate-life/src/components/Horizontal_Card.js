@@ -2,7 +2,7 @@ import React from 'react'
 function Horizontal_Card(props) {
     return (
 
-        <div className="container-fluid" style={{ width: "100%", height: "280px", borderRadius: "40px 0px 0px 40px" }}>
+        <div className="container-fluid" style={{ width: "100%", height: "300px", borderRadius: "40px 0px 0px 40px" }}>
             <div className="row " style={{ borderRadius: "40px 0px 0px 40px", background: "linear-gradient(180deg, #D9D9D9 52.97%, rgba(217, 217, 217, 0.00) 100%)" }}>
                 {/* Card Image div */}
                 <div className="col-md-4">
@@ -16,8 +16,8 @@ function Horizontal_Card(props) {
                         {/* First half contains blood bank Name, contact and address */}
                         <div className="col-12 " style={{ height: "140px" }}>
                             <div className="row" style={{ height: "70px" }}>
-                                <div className="col-9 " > {props.name}</div>
-                                <div className="col-3 "> {props.contact}</div>
+                                <div className="col-9 fw-bold mt-2" > {props.name}</div>
+                                <div className="col-3 mb-3 text-center fw-bold" style={{ background: "linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)", borderRadius: "0px 0px 0px 15px" }}> <p className='mt-3'>{props.contact}</p></div>
                             </div>
 
                             <div className="row" style={{ height: "70px" }}>
@@ -29,10 +29,13 @@ function Horizontal_Card(props) {
                         <div className="col-12" style={{ height: "140px" }}>
 
                             <div className="row" style={{ height: "35px" }}>
-                                <div className="col"> Blood Availibility</div>
+                                <div className="col fw-bold"> Blood Available</div>
                             </div>
 
-                            <div className="row" style={{ height: "105px" }}>
+                            <div className="row" style={{
+                                height: "105px", borderRadius: "15px",
+                                background: "linear-gradient(180deg, #B2FEF9 0%, rgba(143, 216, 226, 0.00) 100%)"
+                            }}>
                                 <div className="col-3">A+  : {props.blood[0]} units</div>
                                 <div className="col-3">A-  : {props.blood[1]} units</div>
                                 <div className="col-3">B+  : {props.blood[2]} units</div>

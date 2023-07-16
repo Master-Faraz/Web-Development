@@ -11,7 +11,7 @@ function Internal_Dropdown(props) {
                 <div className="col-12 " style={{ height: "4vh", borderRadius: "30px 30px 0px 0px", background: "linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)" }}>{props.name}</div>
 
                 <div className="col-12" style={{
-                    height: "6vh",
+                    height: "7vh",
                     borderRadius: "0px 0px 30px 30px",
                     background: "linear-gradient(180deg, #D3E1EA 0%, rgba(85, 95, 93, 0.00) 100%)"
 
