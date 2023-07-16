@@ -27,7 +27,6 @@ function Find_Blood_Bank() {
                 <Horizontal_Card img={bb2} name="All India Institute of Medical Sciences (AIIMS)" contact="0612 245 1070" add="Aurangabad Rd, Phulwari Sharif, Patna, Bihar 801507"
                 blood={[29,25,36,49,55,69,71,83]} />
             </div>
-         
 
         </div>
     )
