@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 
 function Card(props) {
     return (
@@ -14,13 +16,24 @@ function Card(props) {
             <div className="container">
                 <div className="row">
 
-                    <button type="button" class="btn btn-primary col-6 " style={{ height: "100%", background: "linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)", color: "black", borderRadius: "0px 0px 0px 20px" }}>{props.bg}</button>
-                    <button type="button" class="btn btn-primary col-6 " style={{ height: "100%", background: "linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)", color: "black", borderRadius: "0px 0px 20px 0px" }}>Contact</button>
+                    <button type="button" className="btn btn-primary col-6 " style={{ height: "100%", background: "linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)", color: "black", borderRadius: "0px 0px 0px 20px" }}>{props.bg}</button>
+                    <button type="button" className="btn btn-primary col-6 " style={{ height: "100%", background: "linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)", color: "black", borderRadius: "0px 0px 20px 0px" }}>Contact</button>
 
                 </div>
             </div>
         </div>
     )
+}
+
+Card.defaultProps = {
+    img: '...',
+    name: 'Enter Name',
+    bg: 'blood Group',
+}
+
+Card.propTypes = {
+    name: PropTypes.string,
+    bg: PropTypes.string,
 }
 
 export default Card

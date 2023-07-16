@@ -1,5 +1,5 @@
 import React from 'react'
-function Horizontal_Card(props) {
+function DonorCard(props) {
     return (
 
         <div className="container-fluid" style={{ width: "100%", height: "300px", borderRadius: "40px 0px 0px 40px" }}>
@@ -56,23 +56,5 @@ function Horizontal_Card(props) {
     )
 }
 
-export default Horizontal_Card
+export default DonorCard
 
-
-
-{/* <div className="card mb-3 container-fluid" style={{ width: "100%", height: "279px", background: "red" }}>
-<div className="row g-0 " style={{ background: "yellow" }}>
-    <div className="col-md-4">
-        <img src={bb} className="img-fluid rounded-start" alt="..." style={{ height: "279px", width: "453px", borderRadius: "40px 0px 0px 40px", margin: "0px", padding: "0px" }} />
-    </div>
-    <div className="col-md-8" style={{
-        background: "linear-gradient(180deg, #D9D9D9 52.97%, rgba(217, 217, 217, 0.00) 100%)" , background:"green"
-    }}>
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-    </div>
-</div>
-</div> */}

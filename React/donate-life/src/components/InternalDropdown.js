@@ -1,9 +1,10 @@
 import React from 'react'
-import Dropdown_blood from './Dropdown_blood'
+import Dropdown_blood from './DropdownBlood'
+import PropTypes from 'prop-types'
 
 // Internal dropdown is used for finding donors , blood banks by selecting state , city etc
 
-function Internal_Dropdown(props) {
+function InternalDropdown(props) {
     return (
         <div className='row align-items-start text-center' >
             <div className="container" >
@@ -43,4 +44,17 @@ function Internal_Dropdown(props) {
     )
 }
 
-export default Internal_Dropdown
+InternalDropdown.defaultProps = {
+    name: 'Enter Name',
+    dd1: 'Dropdown 1',
+    dd2: 'dropdown 2',
+    dd3: 'dropdown 3',
+}
+
+InternalDropdown.propTypes = {
+    name: PropTypes.string,
+}
+
+
+
+export default InternalDropdown

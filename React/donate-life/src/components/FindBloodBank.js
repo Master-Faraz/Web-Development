@@ -1,13 +1,13 @@
 import React from 'react'
-import Internal_Dropdown from './Internal_Dropdown'
-import Horizontal_Card from './Horizontal_Card'
+import Internal_Dropdown from './InternalDropdown'
+import Horizontal_Card from './DonorCard'
 
 import bb from "./Images/bb.jpg"
 import bb2 from "./Images/bb2.jpg"
 import bb3 from "./Images/bb3.jpg"
 
 
-function Find_Blood_Bank() {
+function FindBloodBank() {
     return (
         <div className="container-fluid" style={{ height: "100vh", width: "70vw", marginTop: "65px" }}>
 
@@ -32,4 +32,4 @@ function Find_Blood_Bank() {
     )
 }
 
-export default Find_Blood_Bank
+export default FindBloodBank

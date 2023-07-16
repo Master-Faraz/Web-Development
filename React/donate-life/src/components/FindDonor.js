@@ -1,6 +1,7 @@
 import React from 'react'
-import Internal_Dropdown from './Internal_Dropdown'
+import Internal_Dropdown from './InternalDropdown'
 import Card from './Card'
+
 
 import Faraz from './Images/Faraz.png'
 import Sumit from './Images/Sumit.png'
@@ -8,7 +9,7 @@ import Sahil from './Images/Sahil.png'
 import harsh from './Images/harsh.png'
 import Atif from './Images/Atif.png'
 
-function Find_Donor() {
+function FindDonor() {
     return (
         <div className="container-fluid" style={{ height: "100vh", width: "70vw", marginTop: "65px" }}>
 
@@ -40,4 +41,4 @@ function Find_Donor() {
     )
 }
 
-export default Find_Donor
+export default FindDonor
