@@ -12,7 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar status="fixed" />
-      
       <Routes>
         <Route>
           <Route exact path="/" element={<HomeComponent />} />
