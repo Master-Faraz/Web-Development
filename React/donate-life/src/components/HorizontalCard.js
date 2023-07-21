@@ -5,7 +5,7 @@ function DonorCard(props) {
         <div className="container-fluid" style={{ width: "100%", height: "300px", borderRadius: "40px 0px 0px 40px" }}>
             <div className="row " style={{ borderRadius: "40px 0px 0px 40px", background: "linear-gradient(180deg, #D9D9D9 52.97%, rgba(217, 217, 217, 0.00) 100%)" }}>
                 {/* Card Image div */}
-                <div className="col-md-4">
+                <div className="col-md-4 ">
                     <img src={props.img} className="img-fluid" alt="..." style={{ height: "280px", width: "100%", borderRadius: "40px 0px 0px 40px", margin: "0px", padding: "0px" }} />
                 </div>
 
@@ -17,7 +17,7 @@ function DonorCard(props) {
                         <div className="col-12 " style={{ height: "140px" }}>
                             <div className="row" style={{ height: "70px" }}>
                                 <div className="col-9 fw-bold mt-2" > {props.name}</div>
-                                <div className="col-3 mb-3 text-center fw-bold" style={{ background: "linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)", borderRadius: "0px 0px 0px 15px" }}> <p className='mt-3'>{props.contact}</p></div>
+                                <div className="col-3 mb-3 text-center fw-bold" style={{ background: "linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%)", borderRadius: "0px 0px 0px 15px" }}> <p className='mt-3 text-white'>{props.contact}</p></div>
                             </div>
 
                             <div className="row" style={{ height: "70px" }}>

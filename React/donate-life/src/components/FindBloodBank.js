@@ -1,6 +1,6 @@
 import React from 'react'
 import Internal_Dropdown from './InternalDropdown'
-import Horizontal_Card from './DonorCard'
+import Horizontal_Card from './HorizontalCard'
 
 import bb from "./Images/bb.jpg"
 import bb2 from "./Images/bb2.jpg"
