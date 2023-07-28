@@ -25,6 +25,8 @@ function DonorCard(props) {
                             </div>
                         </div>
 
+                        
+
                         {/* The Second half contains the BLOOD AVAILIBILITY status */}
                         <div className="col-12" style={{ height: "140px" }}>
 

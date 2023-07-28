@@ -1,4 +1,5 @@
 import './App.css';
+import DonateBlood from './components/DonateBlood';
 import FindBloodBank from './components/FindBloodBank';
 import Find_Donor from './components/FindDonor';
 import Find_Hospital from './components/FindHospital';
@@ -19,10 +20,12 @@ function App() {
           <Route exact path="/donor" element={<Find_Donor />} />
           <Route exact path="/bloodbanks" element={<FindBloodBank />} />
           <Route exact path="/hospital" element={<Find_Hospital />} />
+          <Route exact path="/donateblood" element={<DonateBlood name = "Faraz Ali Ahmad" contact = "9661918210" bg = "AB+" city = "Patna" state = "Bihar"/>} />
         </Route>
       </Routes>
 
     </BrowserRouter>
+  
   );
 }
 

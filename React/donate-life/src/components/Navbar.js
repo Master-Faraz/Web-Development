@@ -22,7 +22,7 @@ function Navbar() {
                                 <Link className="nav-link active" aria-current="page" to="/home" key="1">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="donor" key="2">Donate Blood</Link>
+                                <Link className="nav-link" to="donateblood" key="2">Donate Blood</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="donor" key="3">Find Donor</Link>
