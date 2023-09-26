@@ -100,7 +100,7 @@ router.post("/login", [
         }
       }
       const authtoken = jwt.sign(data, JWT_SECRET);
-      success = true;
+      const success = true;
       res.json({ authtoken })
 
     } catch (error) {
@@ -111,16 +111,16 @@ router.post("/login", [
   })
 
 // ROUTE 3 -->  get logged-in user details using : POST "/api/auth/getuser" -> Login Required
-router.post("/getuser",fetchuser ,async (req, res) => {
-    try {
-      const userId = req.user.id;
-      const user = await User.findById(userId).select("-password")
-res.send(user)
-    } catch (error) {
-      console.error(error.message);
-      res.status(500).send("Internal Server Error");
-    }
+router.post("/getuser", fetchuser, async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const user = await User.findById(userId).select("-password") //.  select all except the password
+    res.send(user)
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send("Internal Server Error");
   }
+}
 )
 
 
