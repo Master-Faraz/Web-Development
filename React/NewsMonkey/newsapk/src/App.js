@@ -18,10 +18,8 @@ export default class App extends Component {
     return (
       <div>
         <BrowserRouter>
-
           <Navbar />
-          
-
+    
           <Routes>
             <Route exact path="/" element={<News key="general" pageSize={this.pageSize} country="in" category="general" />} />
             <Route exact path="/general" element={<News key="general" pageSize={this.pageSize} country="in" category="general" />} />
